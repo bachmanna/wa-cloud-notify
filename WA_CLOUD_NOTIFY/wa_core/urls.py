@@ -1,7 +1,7 @@
 # yourapp/urls.py
 from django.urls import path
-from .views import WhatsAppMessageView
+from .views import send_whatsapp_message
 
 urlpatterns = [
-    path('send-whatsapp/', WhatsAppMessageView.as_view(), name='send_whatsapp'),
+    path('send-whatsapp-message/', send_whatsapp_message, name='send_whatsapp_message'),
 ]
